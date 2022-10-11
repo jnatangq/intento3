@@ -1,5 +1,5 @@
-PE html>
-<html lang="en">
+
+<html xmlns:th="http://www.thymeleaf.org">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,7 +10,7 @@ PE html>
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <title>Editar producto</title>
+    <title>SISTEMA DE GESTION DE PRODUCTOS</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
@@ -30,8 +30,12 @@ PE html>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Gestión de Productos</a
+              <a
+                th:href="@{/products}"
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                >Gestión de productos</a
               >
             </li>
           </ul>
@@ -47,31 +51,58 @@ PE html>
             <h1 class="card-title">Editar producto</h1>
             <!--Inicio del formulario-->
 
-            <form>
+            <form
+              th:action="@{/products/{id} (id=${product.id})}"
+              th:object="${product}"
+              method="POST"
+            >
               <div class="mb-3">
                 <div class="form-group">
                   <label>Nombre del producto</label>
                   <input
                     type="text"
                     name="productName"
+                    th:field="*{productName}"
                     class="form-control"
                     placeholder="Ingrese el nombre del producto"
                   />
                 </div>
-                
                 <div class="form-group">
                   <label>Precio del producto</label>
                   <input
-                    type="long"
+                    type="Long"
                     name="productPrice"
+                    th:field="*{productPrice}"
                     class="form-control"
                     placeholder="Ingrese el precio del producto"
                   />
                 </div>
-                
                 <div class="form-group">
-                  <label>Tipo</label>
+                  <label>Tipo de Producto</label>
+                  <input
+                    type="text"
+                    name="productType"
+                    th:field="*{productType}"
+                    class="form-control"
+                    placeholder="Ingrese el tipo de Producto"
+                  />
                 </div>
+                <div class="form-group">
+                  <label>Tipos</label>
+                  <select
+                    th:field="${product.tipos}"
+                    name="tipos"
+                    class="form-control"
+                    multiple="true"
+                  >
+                    <option
+                      th:each="product :${tiposList}"
+                      th:value="${tipo.id}"
+                      th:text="${product.ProductName}"
+                    />
+                  </select>
+                </div>
+
                 <div class="box-footer mt-4">
                   <button type="submit" class="btn btn-danger">Enviar</button>
                 </div>
@@ -87,3 +118,5 @@ PE html>
   </body>
 </html>
 
+      
+      
