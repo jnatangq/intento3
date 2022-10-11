@@ -1,7 +1,5 @@
 package com.proyecto.coffe.service;
 
-
-
 import java.util.List;
 
 import com.proyecto.coffe.Entity.Product;
@@ -20,7 +18,6 @@ public class ProductService implements IProductService {
     public List<Product> getAllProducts() {
         return productRepository.findAllSortByproductName();
     }
-
 
 
     @Override

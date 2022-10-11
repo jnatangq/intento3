@@ -1,6 +1,6 @@
-INSERT INTO tipos(
+INSERT INTO Tipos(
     id,
-    NAME,
+    tipos,
     umedida,
     contcafe,
     contazucar
