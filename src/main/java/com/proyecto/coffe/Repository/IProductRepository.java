@@ -20,5 +20,9 @@ public interface IProductRepository extends JpaRepository<Tipo, Long> {
 
     @Query("FROM Products p ORDER BY productName ASK")
     public List<Product> findAllSortByproductName();
+
+    public Product save(Product product);
+
+
 }
 

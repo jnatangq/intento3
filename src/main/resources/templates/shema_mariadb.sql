@@ -78,3 +78,281 @@ VALUES(
     bajo,
     bajo
 )
+INSERT INTO products(
+    id,
+    ProductName,
+    Productprice,
+    producType,
+ 
+)
+VALUES(
+    1,
+    "TintoAmericano",
+    2000,
+    Bebida_caliente,
+    
+),(
+     2,
+    "TintoCampesino",
+    2500,
+    Bebida_caliente,
+ ),(
+     3,
+    "TintoConEspecias",
+    3000,
+    Bebida_caliente,
+ ),(
+     4,
+    "Latte",
+    3000,
+    Bebida_caliente,
+ ),(
+     5,
+    "Capuccino",
+    4500,
+    Bebida_caliente,
+),(
+     5,
+    "Mocaccino",
+    4500,
+    Bebida_caliente,          
+),(
+     6,
+    "Mocaccino",
+    4500,
+    Bebida_caliente,    
+),(
+     7,
+    "TeChai",
+    5000,
+    Bebida_caliente,    
+
+),(
+     8,
+    "LimonadaNatural",
+    3500,
+    Bebida_fria,  
+
+),(
+     10,
+    "LimonadaCerezada",
+    4500,
+    Bebida_fria,  
+
+),(
+     11,
+    "LimonadaDeCoco",
+    7000,
+    Bebida_fria,  
+),(
+     12,
+    "LimonadaDeCafe",
+    7000,
+    Bebida_fria,  
+),(
+     13,
+    "JugoNaturalEnAgua",
+    3500,
+    Bebida_fria,  
+),(
+     14,
+    "JugoNaturalEnLeche",
+    4500,
+    Bebida_fria,
+),(
+     15,
+    "GranizadoDeCafe",
+    7500,
+    Bebida_fria, 
+),(
+     16,
+    "GranizadoDeFrutas",
+    7500,
+    Bebida_fria, 
+),(
+     17,
+    "QuirsDeCafe",
+    3500,
+    Bebida_caliente, 
+),(
+     18,
+    "AromaticaDeYerbas",
+    2000,
+    Bebida_caliente, 
+),(
+     19,
+    "AromaticaDeFrutas",
+    3000,
+    Bebida_caliente,
+),(
+     19,
+    "AromaticaDeFrutas",
+    3000,
+    Bebida_caliente,
+),(
+     20,
+    "Carajillo",
+    7000,
+    Bebida_caliente,
+),(
+     21,
+    "Canelazo",
+    7000,
+    Bebida_caliente,
+),(
+     22,
+    "VinoCaliente",
+    10000,
+    Bebida_caliente,
+),(
+     23,
+    "Margarita",
+    10000,
+    Bebida_fria,
+),(
+     24,
+    "TomCollins",
+    10000,
+    Bebida_fria,
+),(
+     24,
+    "Mojito",
+    10000,
+    Bebida_fria,
+),(
+     25,
+    "ShotAmareto",
+    4000,
+    Bebida_fria,
+),(
+     26,
+    "ShotTequila",
+    4500,
+    Bebida_fria,
+),(
+     27,
+    "ShotRon",
+    4000,
+    Bebida_fria,
+),(
+     28,
+    "ShotAguardiente",
+    3000,
+    Bebida_fria,
+),(
+     29,
+    "ShotWhisky",
+    6000,
+    Bebida_fria,
+),(
+     30,
+    "ShotBrandy",
+    4500,
+    Bebida_fria,
+),(
+     31,
+    "Gaseosa",
+    2500,
+    Bebida_fria,
+),(
+     32,
+    "AguaPequeña",
+    1000,
+    Bebida_fria,
+),(
+     33,
+    "AguaGrande",
+    1500,
+    Bebida_fria,
+),(
+     34,
+    "Gatorade",
+    3500,
+    Bebida_fria, 
+),(
+     35,
+    "CervezaArtesanal",
+    800,
+    Bebida_fria,   
+),(
+     36,
+    "CervezaClubColombia",
+    4500,
+    Bebida_fria,   
+),(
+     37,
+    "CervezaBudWeiser",
+    3500,
+    Bebida_fria,  
+),(
+     38,
+    "CervezaPoker",
+    3500,
+    Bebida_fria, 
+),(
+     39,
+    "CervezaAguila",
+    3500,
+    Bebida_fria, 
+),(
+     40,
+    "CervezaAndina",
+    3500,
+    Bebida_fria,     
+
+),(
+     41,
+    "Achiras",
+    2000,
+    Comestible,     
+),(
+     42,
+    "GalletasAvena",
+    3000,
+    Comestible,
+),(
+     43,
+    "GalletasOreo",
+    1000,
+    Comestible,
+),(
+     43,
+    "Chocolatinayetpequeña",
+    800,
+    Comestible,
+),(
+     44,
+    "ChocolatinayetMediana",
+    1300,
+    Comestible,
+ ),(
+     45,
+    "ChocolatinayetGrande",
+    4500,
+    Comestible,
+),(
+     46,
+    "TortaAmapola",
+    3500,
+    Comestible, 
+),(
+     47,
+    "TortaZanahoria",
+    3500,
+    Comestible,                    
+),(
+     48,
+    "TortaChocolate",
+    3500,
+    Comestible,  
+),(
+     49,
+    "EmpanadaCarne",
+    2500,
+    Comestible,             
+),(
+     49,
+    "EmpanadaPollo",
+    2500,
+    Comestible,    
+

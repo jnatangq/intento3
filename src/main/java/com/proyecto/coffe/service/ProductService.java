@@ -1,14 +1,13 @@
 package com.proyecto.coffe.service;
 
 
-import java.util.List;
 
-import org.springframework.stereotype.Service;
+import java.util.List;
 
 import com.proyecto.coffe.Entity.Product;
 import com.proyecto.coffe.Repository.IProductRepository;
 
-@Service
+
 public class ProductService implements IProductService {
 
     private IProductRepository productRepository;
@@ -19,17 +18,21 @@ public class ProductService implements IProductService {
 
     @Override
     public List<Product> getAllProducts() {
-        return productRepository.findAll();
+        return productRepository.findAllSortByproductName();
     }
+
+
 
     @Override
     public Product saveProduct(Product product) {
-        return productRepository.save(product);
+        return productRepository.save(product );
     }
 
+    
+
     @Override
-    public Product getProductById(Long id) {
-        return productRepository.findProductById(id).get();
+    public void deleteProductById(Long id) {
+        productRepository.deleteById(id);
     }
 
     @Override
@@ -38,16 +41,23 @@ public class ProductService implements IProductService {
     }
 
     @Override
-    public void deleteProductById(Long id) {
-        Product productRepository.deleteProductById(id);
+    public List<Product> getProductsByproductName(String productName) {
+        
+        return productRepository.findByProductContaining(productName);
     }
 
     @Override
-    public List<Product > getProductsByProductName(String productName) {
-        return productRepository.findByNameContaining(productName);
+    public Product getProductById(Long id) {
+     
+        return null;
     }
 
-}
+   
+    }
+
+  
+
+
 
       
-      
+
